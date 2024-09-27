@@ -87,9 +87,9 @@ function DataTable({
   const [search, setSearch] = useState(globalFilter);
 
   // Search input state handle todo debounce
-  const onSearchChange = (value) => {
+  const onSearchChange = value => {
     setGlobalFilter(value || undefined);
-  }
+  };
 
   // A function that sets the sorted value for the table
   const setSortedValue = column => {
@@ -102,7 +102,6 @@ function DataTable({
     } else {
       sortedValue = false;
     }
-
     return sortedValue;
   };
 
@@ -160,37 +159,49 @@ function DataTable({
       ) : null}
       <Table {...getTableProps()}>
         <MDBox component="thead">
-          {headerGroups.map((headerGroup, key) => (
-            <TableRow key={key} {...headerGroup.getHeaderGroupProps()}>
-              {headerGroup.headers.map((column, idx) => (
-                <DataTableHeadCell
-                  key={idx}
-                  {...column.getHeaderProps(isSorted && column.getSortByToggleProps())}
-                  width={column.width ? column.width : "auto"}
-                  align={column.align ? column.align : "left"}
-                  sorted={setSortedValue(column)}
-                >
-                  {column.render("Header")}
-                </DataTableHeadCell>
-              ))}
-            </TableRow>
-          ))}
+          {headerGroups.map((headerGroup, key) => {
+            const { key: keyProp, ...rest } = headerGroup.getHeaderGroupProps();
+            return (
+              <TableRow key={key} {...rest}>
+                {headerGroup.headers.map((column, idx) => {
+                  const { key: keyProp, ...rest } = column.getHeaderProps(
+                    isSorted && column.getSortByToggleProps()
+                  );
+                  return (
+                    <DataTableHeadCell
+                      key={idx}
+                      {...rest}
+                      width={column.width ? column.width : "auto"}
+                      align={column.align ? column.align : "left"}
+                      sorted={setSortedValue(column)}
+                    >
+                      {column.render("Header")}
+                    </DataTableHeadCell>
+                  );
+                })}
+              </TableRow>
+            );
+          })}
         </MDBox>
         <TableBody {...getTableBodyProps()}>
           {page.map((row, key) => {
             prepareRow(row);
+            const { key: keyProp, ...restRowProps } = row.getRowProps();
             return (
-              <TableRow key={key} {...row.getRowProps()}>
-                {row.cells.map((cell, idx) => (
-                  <DataTableBodyCell
-                    key={idx}
-                    noBorder={noEndBorder && rows.length - 1 === key}
-                    align={cell.column.align ? cell.column.align : "left"}
-                    {...cell.getCellProps()}
-                  >
-                    {cell.render("Cell")}
-                  </DataTableBodyCell>
-                ))}
+              <TableRow key={key} {...restRowProps}>
+                {row.cells.map((cell, idx) => {
+                  const { key: keyProp, ...rest } = cell.getCellProps();
+                  return (
+                    <DataTableBodyCell
+                      key={idx}
+                      noBorder={noEndBorder && rows.length - 1 === key}
+                      align={cell.column.align ? cell.column.align : "left"}
+                      {...rest}
+                    >
+                      {cell.render("Cell")}
+                    </DataTableBodyCell>
+                  );
+                })}
               </TableRow>
             );
           })}

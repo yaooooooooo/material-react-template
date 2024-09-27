@@ -277,7 +277,7 @@ function Configurator() {
             data-icon="octicon-star"
             data-size="large"
             data-show-count="true"
-            aria-label="Star yaooooooooo/material-react on GitHub"
+            aria-label="Star yaooooooooo/material-react-template on GitHub"
           >
             Star
           </GitHubButton>
