@@ -11,18 +11,18 @@ import Icon from "@mui/material/Icon";
 import MDBox from "./styled-components/MDBox";
 import Sidenav from "./components/Sidenav";
 import Configurator from "./components/Configurator";
-import theme from "assets/theme";
-import themeDark from "assets/theme-dark";
+import theme from "./assets/theme";
+import themeDark from "./assets/theme-dark";
 
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 
-import routes from "routes";
-import { useMaterialUIController, setMiniSidenav, setOpenConfigurator } from "context";
+import routes from "./routes";
+import { useMaterialUIController, setMiniSidenav, setOpenConfigurator } from "./context";
 
 // Images
-import brandWhite from "assets/images/logo.png";
-import brandDark from "assets/images/logo-dark.png";
+import brandWhite from "./assets/images/logo.png";
+import brandDark from "./assets/images/logo-dark.png";
 
 export default function App() {
   const [controller, dispatch] = useMaterialUIController();

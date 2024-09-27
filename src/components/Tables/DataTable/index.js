@@ -1,6 +1,6 @@
 import { useMemo, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { useTable, usePagination, useGlobalFilter, useAsyncDebounce, useSortBy } from "react-table";
+import { useTable, usePagination, useGlobalFilter, useSortBy } from "react-table";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableContainer from "@mui/material/TableContainer";
@@ -86,10 +86,10 @@ function DataTable({
   // Search input value state
   const [search, setSearch] = useState(globalFilter);
 
-  // Search input state handle
-  const onSearchChange = useAsyncDebounce(value => {
+  // Search input state handle todo debounce
+  const onSearchChange = (value) => {
     setGlobalFilter(value || undefined);
-  }, 100);
+  }
 
   // A function that sets the sorted value for the table
   const setSortedValue = column => {

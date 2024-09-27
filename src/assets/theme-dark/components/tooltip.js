@@ -1,8 +1,8 @@
 import Fade from "@mui/material/Fade";
-import colors from "assets/theme-dark/base/colors";
-import typography from "assets/theme-dark/base/typography";
-import borders from "assets/theme-dark/base/borders";
-import pxToRem from "assets/theme-dark/functions/pxToRem";
+import colors from "../../../assets/theme-dark/base/colors";
+import typography from "../../../assets/theme-dark/base/typography";
+import borders from "../../../assets/theme-dark/base/borders";
+import pxToRem from "../../../assets/theme-dark/functions/pxToRem";
 
 const { black, white } = colors;
 const { size, fontWeightRegular } = typography;

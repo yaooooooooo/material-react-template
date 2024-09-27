@@ -7,7 +7,7 @@ import Fade from "@mui/material/Fade";
 import MDBox from "../MDBox";
 import MDTypography from "../MDTypography";
 import MDSnackbarIconRoot from "../MDSnackbar/MDSnackbarIconRoot";
-import { useMaterialUIController } from "context";
+import { useMaterialUIController } from "../../context";
 
 function MDSnackbar({
   color = "info",

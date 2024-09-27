@@ -3,8 +3,8 @@ import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
 import MDBox from "../../../styled-components/MDBox";
 import MDTypography from "../../../styled-components/MDTypography";
-import pattern from "assets/images/illustrations/pattern-tree.svg";
-import masterCardLogo from "assets/images/logos/mastercard.png";
+import pattern from "../../../assets/images/illustrations/pattern-tree.svg";
+import masterCardLogo from "../../../assets/images/logos/mastercard.png";
 
 function MasterCard({ color = "dark", number, holder, expires }) {
   const numbers = [...`${number}`];

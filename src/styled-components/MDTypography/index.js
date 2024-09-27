@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 import PropTypes from "prop-types";
 import MDTypographyRoot from "../MDTypography/MDTypographyRoot";
-import { useMaterialUIController } from "context";
+import { useMaterialUIController } from "../../context";
 
 const MDTypography = forwardRef(
   (

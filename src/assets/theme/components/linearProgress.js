@@ -1,6 +1,6 @@
-import borders from "assets/theme/base/borders";
-import colors from "assets/theme/base/colors";
-import pxToRem from "assets/theme/functions/pxToRem";
+import borders from "../../../assets/theme/base/borders";
+import colors from "../../../assets/theme/base/colors";
+import pxToRem from "../../../assets/theme/functions/pxToRem";
 
 const { borderRadius } = borders;
 const { light } = colors;

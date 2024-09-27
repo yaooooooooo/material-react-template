@@ -11,7 +11,7 @@ import MDBox from "../../../../styled-components/MDBox";
 import MDTypography from "../../../../styled-components/MDTypography";
 
 // Material base styles
-import typography from "assets/theme/base/typography";
+import typography from "../../../../assets/theme/base/typography";
 
 function Footer({ light = false }) {
   const { size } = typography;

@@ -1,5 +1,5 @@
-import colors from "assets/theme/base/colors";
-import pxToRem from "assets/theme/functions/pxToRem";
+import colors from "../../../assets/theme/base/colors";
+import pxToRem from "../../../assets/theme/functions/pxToRem";
 
 const { dark } = colors;
 

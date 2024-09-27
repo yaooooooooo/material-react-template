@@ -17,7 +17,7 @@ import Icon from "@mui/material/Icon";
 import MDBox from "../../../../styled-components/MDBox";
 import MDTypography from "../../../../styled-components/MDTypography";
 import configs from "../../../Charts/LineCharts/DefaultLineChart/configs";
-import colors from "assets/theme/base/colors";
+import colors from "../../../../assets/theme/base/colors";
 
 ChartJS.register(
   CategoryScale,

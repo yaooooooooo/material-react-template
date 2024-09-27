@@ -10,11 +10,11 @@ import MDTypography from "../../../../styled-components/MDTypography";
 import MDButton from "../../../../styled-components/MDButton";
 
 // Images
-import masterCardLogo from "assets/images/logos/mastercard.png";
-import visaLogo from "assets/images/logos/visa.png";
+import masterCardLogo from "../../../../assets/images/logos/mastercard.png";
+import visaLogo from "../../../../assets/images/logos/visa.png";
 
 // Material Dashboard 2 React context
-import { useMaterialUIController } from "context";
+import { useMaterialUIController } from "../../../../context";
 
 function PaymentMethod() {
   const [controller] = useMaterialUIController();

@@ -1,5 +1,5 @@
-import colors from "assets/theme-dark/base/colors";
-import boxShadow from "assets/theme-dark/functions/boxShadow";
+import colors from "../../../assets/theme-dark/base/colors";
+import boxShadow from "../../../assets/theme-dark/functions/boxShadow";
 
 const { black, dark, tabs, coloredShadows } = colors;
 

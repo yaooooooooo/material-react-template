@@ -1,5 +1,5 @@
-import breakpoints from "assets/theme/base/breakpoints";
-import pxToRem from "assets/theme/functions/pxToRem";
+import breakpoints from "../../../assets/theme/base/breakpoints";
+import pxToRem from "../../../assets/theme/functions/pxToRem";
 
 const {
   values: { sm, md, lg, xl, xxl },

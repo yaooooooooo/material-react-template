@@ -1,7 +1,7 @@
-import colors from "assets/theme-dark/base/colors";
-import borders from "assets/theme-dark/base/borders";
-import boxShadows from "assets/theme-dark/base/boxShadows";
-import rgba from "assets/theme-dark/functions/rgba";
+import colors from "../../../../assets/theme-dark/base/colors";
+import borders from "../../../../assets/theme-dark/base/borders";
+import boxShadows from "../../../../assets/theme-dark/base/boxShadows";
+import rgba from "../../../../assets/theme-dark/functions/rgba";
 
 const { black, background } = colors;
 const { borderWidth, borderRadius } = borders;

@@ -1,5 +1,5 @@
-import colors from "assets/theme/base/colors";
-import rgba from "assets/theme/functions/rgba";
+import colors from "../../../assets/theme/base/colors";
+import rgba from "../../../assets/theme/functions/rgba";
 
 const { info, white, gradients } = colors;
 

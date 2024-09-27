@@ -1,6 +1,6 @@
-import colors from "assets/theme-dark/base/colors";
-import pxToRem from "assets/theme-dark/functions/pxToRem";
-import boxShadow from "assets/theme-dark/functions/boxShadow";
+import colors from "../../../../assets/theme-dark/base/colors";
+import pxToRem from "../../../../assets/theme-dark/functions/pxToRem";
+import boxShadow from "../../../../assets/theme-dark/functions/boxShadow";
 
 const { white } = colors;
 

@@ -13,11 +13,11 @@ import Icon from "@mui/material/Icon";
 import MDBox from "../../../../styled-components/MDBox";
 import MDTypography from "../../../../styled-components/MDTypography";
 import MDAvatar from "../../../../styled-components/MDAvatar";
-import breakpoints from "assets/theme/base/breakpoints";
+import breakpoints from "../../../../assets/theme/base/breakpoints";
 
 // Images
-import burceMars from "assets/images/bruce-mars.jpg";
-import backgroundImage from "assets/images/bg-profile.jpeg";
+import burceMars from "../../../../assets/images/bruce-mars.jpg";
+import backgroundImage from "../../../../assets/images/bg-profile.jpeg";
 
 function Header({ children = "" }) {
   const [tabsOrientation, setTabsOrientation] = useState("horizontal");

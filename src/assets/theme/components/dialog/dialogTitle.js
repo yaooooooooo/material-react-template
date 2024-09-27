@@ -1,5 +1,5 @@
-import typography from "assets/theme/base/typography";
-import pxToRem from "assets/theme/functions/pxToRem";
+import typography from "../../../../assets/theme/base/typography";
+import pxToRem from "../../../../assets/theme/functions/pxToRem";
 
 const { size } = typography;
 

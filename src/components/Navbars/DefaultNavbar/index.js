@@ -8,8 +8,8 @@ import MDTypography from "../../../styled-components/MDTypography";
 import MDButton from "../../../styled-components/MDButton";
 import DefaultNavbarLink from "../../Navbars/DefaultNavbar/DefaultNavbarLink";
 import DefaultNavbarMobile from "../../Navbars/DefaultNavbar/DefaultNavbarMobile";
-import breakpoints from "assets/theme/base/breakpoints";
-import { useMaterialUIController } from "context";
+import breakpoints from "../../../assets/theme/base/breakpoints";
+import { useMaterialUIController } from "../../../context";
 
 function DefaultNavbar({ transparent = false, light = false, action = false }) {
   const [controller] = useMaterialUIController();
@@ -20,7 +20,6 @@ function DefaultNavbar({ transparent = false, light = false, action = false }) {
 
   const openMobileNavbar = ({ currentTarget }) => setMobileNavbar(currentTarget.parentNode);
   const closeMobileNavbar = () => setMobileNavbar(false);
-
   useEffect(() => {
     // A function that sets the display state for the DefaultNavbarMobile.
     function displayMobileNavbar() {

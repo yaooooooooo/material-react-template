@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import Icon from "@mui/material/Icon";
 import MDBox from "../../../styled-components/MDBox";
-import { useMaterialUIController } from "context";
+import { useMaterialUIController } from "../../../context";
 
 function DataTableHeadCell({
   width = "auto",

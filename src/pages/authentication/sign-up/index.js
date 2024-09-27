@@ -15,7 +15,7 @@ import MDButton from "../../../styled-components/MDButton";
 import CoverLayout from "../../authentication/components/CoverLayout";
 
 // Images
-import bgImage from "assets/images/bg-sign-up-cover.jpeg";
+import bgImage from "../../../assets/images/bg-sign-up-cover.jpeg";
 
 function Cover() {
   return (

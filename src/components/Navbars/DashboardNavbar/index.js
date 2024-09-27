@@ -26,7 +26,7 @@ import {
   setTransparentNavbar,
   setMiniSidenav,
   setOpenConfigurator,
-} from "context";
+} from "../../../context";
 
 function DashboardNavbar({ absolute = false, light = false, isMini = false }) {
   const [navbarType, setNavbarType] = useState();

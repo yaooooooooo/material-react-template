@@ -24,7 +24,7 @@ import MDButton from "../../../styled-components/MDButton";
 import BasicLayout from "../../authentication/components/BasicLayout";
 
 // Images
-import bgImage from "assets/images/bg-sign-in-basic.jpeg";
+import bgImage from "../../../assets/images/bg-sign-in-basic.jpeg";
 
 function Basic() {
   const [rememberMe, setRememberMe] = useState(false);

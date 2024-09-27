@@ -1,5 +1,5 @@
 import MDBox from "../../styled-components/MDBox";
-import typography from "assets/theme/base/typography";
+import typography from "../../assets/theme/base/typography";
 
 function Footer() {
   const { size } = typography;

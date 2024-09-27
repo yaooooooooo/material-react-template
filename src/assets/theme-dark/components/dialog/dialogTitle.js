@@ -1,5 +1,5 @@
-import typography from "assets/theme-dark/base/typography";
-import pxToRem from "assets/theme-dark/functions/pxToRem";
+import typography from "../../../../assets/theme-dark/base/typography";
+import pxToRem from "../../../../assets/theme-dark/functions/pxToRem";
 
 const { size } = typography;
 

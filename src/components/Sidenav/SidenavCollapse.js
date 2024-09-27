@@ -10,7 +10,7 @@ import {
   collapseIcon,
   collapseText,
 } from "../Sidenav/styles/sidenavCollapse";
-import { useMaterialUIController } from "context";
+import { useMaterialUIController } from "../../context";
 
 function SidenavCollapse({ icon, name, active = false, ...rest }) {
   const [controller] = useMaterialUIController();

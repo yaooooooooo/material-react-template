@@ -2,9 +2,9 @@ import MDBox from "../../../styled-components/MDBox";
 import MDTypography from "../../../styled-components/MDTypography";
 import MDAvatar from "../../../styled-components/MDAvatar";
 import MDBadge from "../../../styled-components/MDBadge";
-import team2 from "assets/images/team-2.jpg";
-import team3 from "assets/images/team-3.jpg";
-import team4 from "assets/images/team-4.jpg";
+import team2 from "../../../assets/images/team-2.jpg";
+import team3 from "../../../assets/images/team-3.jpg";
+import team4 from "../../../assets/images/team-4.jpg";
 
 export default function data() {
   const Author = ({ image, name, email }) => (

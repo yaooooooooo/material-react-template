@@ -1,4 +1,4 @@
-import pxToRem from "assets/theme-dark/functions/pxToRem";
+import pxToRem from "../../../../assets/theme-dark/functions/pxToRem";
 
 const dialogActions = {
   styleOverrides: {

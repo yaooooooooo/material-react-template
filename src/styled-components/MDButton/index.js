@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 import PropTypes from "prop-types";
 import MDButtonRoot from "../MDButton/MDButtonRoot";
-import { useMaterialUIController } from "context";
+import { useMaterialUIController } from "../../context";
 
 const MDButton = forwardRef(
   (

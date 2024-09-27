@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Card from "@mui/material/Card";
 import MDBox from "../../../styled-components/MDBox";
 import MDTypography from "../../../styled-components/MDTypography";
-import { useMaterialUIController } from "context";
+import { useMaterialUIController } from "../../../context";
 import { TimelineProvider } from "../../Timeline/context";
 
 function TimelineList({ title, dark = false, children }) {

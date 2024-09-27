@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
 import MDBox from "../../../styled-components/MDBox";
-import { useMaterialUIController, setLayout } from "context";
+import { useMaterialUIController, setLayout } from "../../../context";
 
 function PageLayout({ background = "default", children }) {
   const [, dispatch] = useMaterialUIController();
